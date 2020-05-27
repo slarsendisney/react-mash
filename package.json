@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/slarsendisney/react-mash.git"
   },
   "author": "Sam Larsen-Disney <s.larsendisney@gmail.com>",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/slarsendisney/react-mash/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/slarsendisney/react-mash.git",
   "peerDependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
