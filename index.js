@@ -28,10 +28,14 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var _default = function _default(props) {
-  var interval = props.interval,
-      clicks = props.clicks,
-      onSpam = props.onSpam,
-      onClick = props.onClick;
+  var _props$interval = props.interval,
+      interval = _props$interval === void 0 ? 1000 : _props$interval,
+      _props$clicks = props.clicks,
+      clicks = _props$clicks === void 0 ? 4 : _props$clicks,
+      onMash = props.onMash,
+      onClick = props.onClick,
+      _props$resetOnMash = props.resetOnMash,
+      resetOnMash = _props$resetOnMash === void 0 ? true : _props$resetOnMash;
 
   var _useState = (0, _react.useState)(0),
       _useState2 = _slicedToArray(_useState, 2),
@@ -44,8 +48,13 @@ var _default = function _default(props) {
     }, interval);
 
     if (count >= clicks) {
-      onSpam();
-      setCount(0);
+      if (onMash) {
+        onMash();
+      }
+
+      if (resetOnMash) {
+        setCount(0);
+      }
     }
 
     return function () {
@@ -54,7 +63,10 @@ var _default = function _default(props) {
   }, [count]);
 
   var onClickFunctions = function onClickFunctions() {
-    onClick();
+    if (onClick) {
+      onClick();
+    }
+
     setCount(count + 1);
   };
 
