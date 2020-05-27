@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 
 export default (props) => {
-  const { interval, clicks, onSpam, onClick } = props;
+  const { interval, clicks, onMash, onClick } = props;
   const [count, setCount] = useState(0);
 
   useEffect(() => {
     const handler = setTimeout(() => setCount(0), interval);
     if (count >= clicks) {
-      onSpam();
+      onMash();
       setCount(0);
     }
     return () => clearTimeout(handler);
