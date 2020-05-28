@@ -21,7 +21,7 @@ All props that you normally pass to a``<button/>` can be used as normal.
 - `onMash` -  Function you would like to call when the button is repeatedly clicked.
 - `clicks` -  Number of clicks that should trigger onMash.
 - `interval` -  Iime in which the number of clicks should trigger onMash.
-- resetOnMash - Default true.When set to false, mashing the button passed the number of clicks will continue to call the onMash function.
+- `resetOnMash` - Default true.When set to false, mashing the button passed the number of clicks will continue to call the onMash function.
 
 Example Usage:
 
