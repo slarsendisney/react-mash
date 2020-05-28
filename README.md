@@ -20,8 +20,8 @@ All props that you normally pass to a button tag can be used as normal.
 - `onClick` -  Function you would like to call when the button is clicked.
 - `onMash` -  Function you would like to call when the button is repeatedly clicked.
 - `clicks` -  Number of clicks that should trigger onMash.
-- `interval` -  Iime in which the number of clicks should trigger onMash.
-- `resetOnMash` - Default true.When set to false, mashing the button passed the number of clicks will continue to call the onMash function.
+- `interval` -  Time in which the number of clicks should trigger onMash.
+- `resetOnMash` - Default true. When set to false, mashing the button passed the number of clicks specified will continue to call the onMash function.
 
 Example Usage:
 
