@@ -13,7 +13,7 @@ npm install react-mash
 
 ### Use
 
-All props that you normally pass to a``<button/>` can be used as normal.
+All props that you normally pass to a button tag can be used as normal.
 
 #### props
 
