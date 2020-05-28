@@ -1,6 +1,6 @@
 {
   "name": "react-mash",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Button that can trigger a different function when repeatedly clicked in quick succession.",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
-  "keyword": [
+  "keywords": [
     "button",
     "react",
     "mash",
